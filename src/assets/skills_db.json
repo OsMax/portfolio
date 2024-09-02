@@ -1,42 +1,38 @@
 [
     {
-        "id": 1,
         "skill": "HTML",
-        "img": "HTML"
+        "img": "HTML.svg"
     },
     {
-        "id": 2,
         "skill": "CSS",
-        "img": "CSS"
+        "img": "CSS.svg"
     },
     {
-        "id": 3,
+        "skill": "JS",
+        "img": "JS.svg"
+    },
+    {
         "skill": "React",
-        "img": "React"
+        "img": "React.svg"
     },
     {
-        "id": 4,
         "skill": "Redux",
-        "img": "Redux"
+        "img": "Redux.svg"
     },
     {
-        "id": 5,
         "skill": "React-Native",
-        "img": "React-Native"
+        "img": "React-Native.svg"
     },
     {
-        "id": 6,
         "skill": "Node.js",
-        "img": "Node.js"
+        "img": "Node.svg"
     },
     {
-        "id": 7,
         "skill": "Express",
-        "img": "Express"
+        "img": "Express.svg"
     },
     {
-        "id": 8,
         "skill": "MongoDB",
-        "img": "MongoDB"
+        "img": "MongoDB.svg"
     }
 ]
