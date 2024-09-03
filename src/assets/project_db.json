@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Car-rental",
+        "link": "https://osmax.github.io/car-rental/",
+        "skills": [
+            "React",
+            "Redux",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "command": "false"
+    },
+    {
+        "name": "PhoneBook",
+        "link": "https://osmax.github.io/goit-react-hw-08-phonebook/",
+        "skills": [
+            "React",
+            "Redux",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "command": "false"
+    },
+    {
+        "name": "Pixabay",
+        "link": "https://osmax.github.io/goit-react-hw-04-images/",
+        "skills": [
+            "React",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "command": "false"
+    },
+    {
+        "name": "Movies",
+        "link": "https://osmax.github.io/goit-react-hw-05-movies/",
+        "skills": [
+            "React",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "command": "false"
+    },
+    {
+        "name": "Cat-breeds",
+        "link": "https://osmax.github.io/goit-js-hw-10/",
+        "skills": [
+            "React",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "command": "false"
+    },
+    {
+        "name": "Fresh harvest box",
+        "link": "https://osmax.github.io/project-p_g9_htcs/",
+        "skills": [
+            "HTML",
+            "CSS"
+        ],
+        "command": "true"
+    },
+    {
+        "name": "Bookshelf",
+        "link": "https://argojkee.github.io/bookshelf/",
+        "skills": [
+            "React",
+            "Redux",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "command": "true"
+    },
+    {
+        "name": "Daily water",
+        "link": "https://argojkee.github.io/dreamteam-water/",
+        "skills": [
+            "React",
+            "Redux",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "command": "true"
+    },
+    {
+        "name": "Daily water server",
+        "link": "https://github.com/OsMax/dreamteam-water-server",
+        "skills": [
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "command": "true"
+    }
+]
