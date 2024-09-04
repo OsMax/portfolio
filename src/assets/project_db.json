@@ -9,7 +9,7 @@
             "HTML",
             "CSS"
         ],
-        "command": "false"
+        "command": false
     },
     {
         "name": "PhoneBook",
@@ -21,7 +21,7 @@
             "HTML",
             "CSS"
         ],
-        "command": "false"
+        "command": false
     },
     {
         "name": "Pixabay",
@@ -32,7 +32,7 @@
             "HTML",
             "CSS"
         ],
-        "command": "false"
+        "command": false
     },
     {
         "name": "Movies",
@@ -43,7 +43,7 @@
             "HTML",
             "CSS"
         ],
-        "command": "false"
+        "command": false
     },
     {
         "name": "Cat-breeds",
@@ -54,7 +54,7 @@
             "HTML",
             "CSS"
         ],
-        "command": "false"
+        "command": false
     },
     {
         "name": "Fresh harvest box",
@@ -63,7 +63,7 @@
             "HTML",
             "CSS"
         ],
-        "command": "true"
+        "command": true
     },
     {
         "name": "Bookshelf",
@@ -75,7 +75,7 @@
             "HTML",
             "CSS"
         ],
-        "command": "true"
+        "command": true
     },
     {
         "name": "Daily water",
@@ -87,17 +87,17 @@
             "HTML",
             "CSS"
         ],
-        "command": "true"
+        "command": true
     },
     {
         "name": "Daily water server",
-        "link": "https://github.com/OsMax/dreamteam-water-server",
+        "link": "https://github.com/OsMax/dreamteam-water-server/blob/main/readme.md",
         "skills": [
             "JavaScript",
             "Node.js",
             "Express",
             "MongoDB"
         ],
-        "command": "true"
+        "command": true
     }
 ]
