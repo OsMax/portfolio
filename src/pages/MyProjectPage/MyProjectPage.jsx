@@ -1,4 +1,10 @@
+import ProjectList from "../../components/ProjectList/ProjectList";
+
 const MyProjectPage = () => {
-  return <h1>projects</h1>;
+  return (
+    <div>
+      <ProjectList />
+    </div>
+  );
 };
 export default MyProjectPage;
