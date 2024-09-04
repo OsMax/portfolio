@@ -1,0 +1,58 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.h1,
+.h2,
+.skills {
+  margin: 0;
+}
+.h1 {
+  color: #fff;
+}
+
+.h2,
+.skills {
+  color: #999;
+}
+.skills {
+  font-size: 10px;
+  text-align: center;
+}
+
+.fotoContainer {
+  position: relative;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.foto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+}
+
+.logo {
+  position: relative;
+  top: -40px;
+  left: -20px;
+}
+
+.links {
+  text-decoration: none;
+  color: #999;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.links span {
+  color: #c778dd;
+}
+
+.links:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
