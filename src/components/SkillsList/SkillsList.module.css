@@ -19,3 +19,9 @@
 .item:hover {
   transform: rotateX(15deg) rotateY(5deg);
 }
+
+.skillImg {
+  width: 100px;
+  height: 100px;
+  /* position: absolute; */
+}
