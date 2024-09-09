@@ -15,8 +15,9 @@
   padding: 8px;
   text-decoration: underline;
   color: #fff;
-  background-color: #293d54;
-  border-radius: 10px;
+  /* background-color: #293d54; */
+  /* border-radius: 10px; */
+  border: 1px solid #777;
   transform-style: preserve-3d;
   transform: rotateX(15deg) rotateY(-5deg);
   transition: transform 0.6s;
