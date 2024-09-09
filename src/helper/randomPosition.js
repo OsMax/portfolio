@@ -1,19 +1,17 @@
-export const randomPosition = (
-  containerWidth,
-  containerHeight,
-  index,
-  totalItems
-) => {
-  const radius = containerWidth / 3; // Радиус равен половине ширины контейнера
-  const centerX = containerWidth / 3; // X-координата центра
-  const centerY = containerHeight; // Y-координата центра (внизу контейнера)
+export const randomPosition = (containerWidth, containerHeight, totalItems) => {
+  const radius = containerWidth / 2;
+  const centerX = containerWidth / 3;
+  const centerY = containerHeight - 180;
+  const segmentAngle = Math.PI / totalItems; // Угол одного сегмента
+  const positions = [];
 
-  // Генерация случайного угла от 0 до π (нижняя полуокружность)
-  const angle = Math.random() * Math.PI;
+  for (let i = 0; i < totalItems; i++) {
+    // Генерация случайного угла внутри сегмента
+    const angle = segmentAngle * i + Math.random() * segmentAngle;
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+    positions.push({ top: y, left: x });
+  }
 
-  // Вычисление координат на основе угла и радиуса
-  const x = centerX + radius * Math.cos(angle);
-  const y = centerY - radius * Math.sin(angle); // Вычитаем, чтобы разместить по нижней части
-
-  return { top: y, left: x };
+  return positions;
 };
