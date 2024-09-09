@@ -1,8 +1,37 @@
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import css from "./HomePage.module.css";
 import { ReactComponent as Logo } from "../../assets/svgImg/logo_back.svg";
+import skills from "../../assets/skills_db.json";
+import { randomPosition } from "../../helper/randomPosition";
 
 const HomePage = () => {
+  const containerRef = useRef(null);
+  const [positions, setPositions] = useState([]);
+  const randomSkills = () => {
+    for (let i = 0; i < skills.length - 1; i++) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [skills[i], skills[j]] = [skills[j], skills[i]];
+    }
+    return skills.slice(0, 3);
+  };
+
+  useEffect(() => {
+    if (containerRef.current) {
+      const containerWidth = containerRef.current.clientWidth;
+      const containerHeight = containerRef.current.clientHeight;
+
+      // Генерация позиций для каждого навыка по полуокружности
+      const skills = randomSkills();
+      const newPositions = skills.map((_, index) =>
+        randomPosition(containerWidth, containerHeight, index, skills.length)
+      );
+
+      // Сохранение сгенерированных позиций в стейт
+      setPositions(newPositions);
+    }
+  }, []);
+
   return (
     <div className={css.mainContainer}>
       <h1 className={css.h1}>Maksym Osovik</h1>
@@ -10,7 +39,7 @@ const HomePage = () => {
       <p className={css.skills}>
         (HTML, CSS, JS, React, Redux, React-Native, Node.js, Express, Mongodb)
       </p>
-      <div className={css.fotoContainer}>
+      <div className={css.fotoContainer} ref={containerRef}>
         <Logo width="90%" height="90%" className={css.logo} />
         <img
           className={css.foto}
@@ -18,6 +47,23 @@ const HomePage = () => {
           alt="Maksym Osovik"
           width="95%"
         />
+        {randomSkills().map((skill, index) => {
+          return (
+            // <div  className={css.item}>
+            <img
+              key={skill.skill}
+              alt={skill.skill}
+              title={skill.skill}
+              src={require(`../../assets/skills/${skill.img}`)}
+              className={css.skillImg}
+              style={{
+                top: `${positions[index]?.top || 0}px`,
+                left: `${positions[index]?.left || 0}px`,
+              }}
+            />
+            // </div>
+          );
+        })}
       </div>
       <NavLink className={css.links} to="/skills">
         <span>#</span>skills
