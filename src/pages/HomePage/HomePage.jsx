@@ -20,15 +20,14 @@ const HomePage = () => {
     if (containerRef.current) {
       const containerWidth = containerRef.current.clientWidth;
       const containerHeight = containerRef.current.clientHeight;
+      const totalItems = 3;
 
-      // Генерация позиций для каждого навыка по полуокружности
-      const skills = randomSkills();
-      const newPositions = skills.map((_, index) =>
-        randomPosition(containerWidth, containerHeight, index, skills.length)
+      const positions = randomPosition(
+        containerWidth,
+        containerHeight,
+        totalItems
       );
-
-      // Сохранение сгенерированных позиций в стейт
-      setPositions(newPositions);
+      setPositions(positions);
     }
   }, []);
 
