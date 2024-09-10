@@ -1,5 +1,5 @@
 import css from "./SkillsPage.module.css";
-import { ReactComponent as MySkills } from "../../assets/skills/mySkills.svg";
+// import { ReactComponent as MySkills } from "../../assets/skills/mySkills.svg";
 import SkillsList from "../../components/SkillsList/SkillsList";
 
 const SkillsPage = () => {
