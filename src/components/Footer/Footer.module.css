@@ -17,3 +17,13 @@
   background-color: #282c33;
   color: #fff;
 }
+
+.logo {
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  align-items: center;
+  /* justify-content: center; */
+}
