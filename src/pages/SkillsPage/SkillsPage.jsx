@@ -11,7 +11,7 @@ const SkillsPage = () => {
       <h2 style={{ color: "#fff", margin: 0, paddingLeft: 10 }}>
         <span style={{ color: "#C778DD" }}>/</span>skills
       </h2>
-      <p style={{ margin: 0, color: "#888", fontSize: 12 }}>
+      <p style={{ margin: 0, paddingLeft: 10, color: "#888", fontSize: 12 }}>
         List of my skills
       </p>
       <SkillsList />
