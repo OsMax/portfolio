@@ -33,6 +33,7 @@
   top: 0;
   left: 0;
   margin-top: 10px;
+  opacity: 0.7;
 }
 
 .logo {
@@ -61,9 +62,27 @@
   z-index: 2;
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   opacity: 0.8;
   top: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
+  transition: transform 0.5s ease;
+}
+
+.skillImg:hover {
+  opacity: 1;
+  animation: shake 7s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+  /* 50% {
+    transform: translate(-50%, -50%) rotateY(20deg);
+  } */
+  100% {
+    transform: translate(-50%, -50%) rotateY(359deg);
+  }
 }
