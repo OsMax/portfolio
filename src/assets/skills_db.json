@@ -1,38 +1,47 @@
 [
     {
         "skill": "HTML",
-        "img": "HTML.svg"
+        "img": "HTML.svg",
+        "wiki": "https://en.wikipedia.org/wiki/HTML"
     },
     {
         "skill": "CSS",
-        "img": "CSS.svg"
+        "img": "CSS.svg",
+        "wiki": "https://en.wikipedia.org/wiki/CSS"
     },
     {
         "skill": "JS",
-        "img": "JS.svg"
+        "img": "JS.svg",
+        "wiki": "https://en.wikipedia.org/wiki/JavaScript"
     },
     {
         "skill": "React",
-        "img": "React.svg"
+        "img": "React.svg",
+        "wiki": "https://en.wikipedia.org/wiki/React_(JavaScript_library)"
     },
     {
         "skill": "Redux",
-        "img": "Redux.svg"
+        "img": "Redux.svg",
+        "wiki": "https://en.wikipedia.org/wiki/Redux"
     },
     {
         "skill": "React-Native",
-        "img": "React-Native.svg"
+        "img": "React-Native.svg",
+        "wiki": "https://en.wikipedia.org/wiki/React-Native"
     },
     {
         "skill": "Node.js",
-        "img": "Node.svg"
+        "img": "Node.svg",
+        "wiki": "https://en.wikipedia.org/wiki/Node.js"
     },
     {
         "skill": "Express",
-        "img": "Express.svg"
+        "img": "Express.svg",
+        "wiki": "https://en.wikipedia.org/wiki/Express.js"
     },
     {
         "skill": "MongoDB",
-        "img": "MongoDB.svg"
+        "img": "MongoDB.svg",
+        "wiki": "https://en.wikipedia.org/wiki/MongoDB"
     }
 ]
