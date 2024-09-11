@@ -49,17 +49,25 @@ const HomePage = () => {
         {randomSkills().map((skill, index) => {
           return (
             // <div  className={css.item}>
-            <img
+            <a
               key={skill.skill}
-              alt={skill.skill}
-              title={skill.skill}
-              src={require(`../../assets/skills/${skill.img}`)}
-              className={css.skillImg}
-              style={{
-                top: `${positions[index]?.top || 0}px`,
-                left: `${positions[index]?.left || 0}px`,
-              }}
-            />
+              href={skill.wiki}
+              className={css.skillLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                // key={skill.skill}
+                alt={skill.skill}
+                title={skill.skill}
+                src={require(`../../assets/skills/${skill.img}`)}
+                className={css.skillImg}
+                style={{
+                  top: `${positions[index]?.top || 0}px`,
+                  left: `${positions[index]?.left || 0}px`,
+                }}
+              />
+            </a>
             // </div>
           );
         })}
