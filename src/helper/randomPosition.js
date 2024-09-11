@@ -1,7 +1,7 @@
 export const randomPosition = (containerWidth, containerHeight, totalItems) => {
   const radius = containerWidth / 3;
   const centerX = containerWidth / 2.5;
-  const centerY = containerHeight - 120;
+  const centerY = containerHeight - 130;
   const segmentAngle = Math.PI / totalItems; // Угол одного сегмента
   const positions = [];
 
