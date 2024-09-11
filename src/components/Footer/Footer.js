@@ -6,16 +6,29 @@ const Footer = () => {
   return (
     <>
       <div className={css.footerContainer}>
-        <NavLink className={css.logo} to="/">
-          <Logo width="20" height="20" />
-          MaksOs
-        </NavLink>
-        <a
-          href="mailto:example@example.com"
-          style={{ textDecoration: "none", color: "#fff" }}
-        >
-          www.osmax@gmail.com
-        </a>
+        <div>
+          <div className={css.email}>
+            <NavLink className={css.logo} to="/">
+              <Logo width="20" height="20" />
+              MaksOs
+            </NavLink>
+            <a
+              href="mailto:example@example.com"
+              style={{ textDecoration: "none", color: "#999" }}
+            >
+              www.osmax@gmail.com
+            </a>
+          </div>
+          <p style={{ margin: 0, marginTop: 10, color: "#fff", fontSize: 12 }}>
+            FullStack Developer
+          </p>
+        </div>
+        <div className={css.mediaContainer}>
+          <p>Media:</p>
+          <div className={css.media}>
+            <p>Media:</p>
+          </div>
+        </div>
       </div>
     </>
   );
