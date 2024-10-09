@@ -53,6 +53,10 @@ const HomePage = () => {
               key={skill.skill}
               href={skill.wiki}
               className={css.skillLink}
+              style={{
+                top: `${positions[index]?.top || 0}px`,
+                left: `${positions[index]?.left || 0}px`,
+              }}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,10 +66,6 @@ const HomePage = () => {
                 title={skill.skill}
                 src={require(`../../assets/skills/${skill.img}`)}
                 className={css.skillImg}
-                style={{
-                  top: `${positions[index]?.top || 0}px`,
-                  left: `${positions[index]?.left || 0}px`,
-                }}
               />
             </a>
             // </div>
