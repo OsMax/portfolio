@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import css from "./Header.module.css";
 import { ReactComponent as Burger } from "../../assets/svgImg/burger.svg";
 import { ReactComponent as Close } from "../../assets/svgImg/menu_close.svg";
 import { ReactComponent as Logo } from "../../assets/svgImg/logo.svg";
-import { useState } from "react";
+import RandomSquare from "../RandomSquare/RandomSquare";
 // import Menu from "../Menu/Menu";
 
 const setAtive = ({ isActive }) => (isActive ? css.active : css.navLink);
@@ -11,60 +12,59 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header>
-      <section>
-        <nav className={css.navContainer}>
-          <NavLink className={css.logo} to="/">
-            <Logo width="24" height="24" />
-            MaksOs
+    <header className={css.header}>
+      <nav className={css.navContainer}>
+        <NavLink className={css.logo} to="/">
+          <Logo width="24" height="24" />
+          MaksOs
+        </NavLink>
+        <div className={`${css.menu} ${showMenu ? css.showMenu : ""}`}>
+          <Close
+            width="24"
+            height="24"
+            className={css.closeBtn}
+            onClick={() => setShowMenu(false)}
+          />
+          <NavLink
+            className={setAtive}
+            to="/"
+            onClick={() => setShowMenu(false)}
+          >
+            Home
           </NavLink>
-          <div className={`${css.menu} ${showMenu ? css.showMenu : ""}`}>
-            <Close
-              width="24"
-              height="24"
-              className={css.closeBtn}
-              onClick={() => setShowMenu(false)}
-            />
-            <NavLink
-              className={setAtive}
-              to="/"
-              onClick={() => setShowMenu(false)}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              className={setAtive}
-              to="/skills"
-              onClick={() => setShowMenu(false)}
-            >
-              Skills
-            </NavLink>
-            <NavLink
-              className={setAtive}
-              to="/projects"
-              onClick={() => setShowMenu(false)}
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              className={setAtive}
-              to="/about"
-              onClick={() => setShowMenu(false)}
-            >
-              About
-            </NavLink>
-            <NavLink
-              className={setAtive}
-              to="/contacts"
-              onClick={() => setShowMenu(false)}
-            >
-              Contacts
-            </NavLink>
-          </div>
-          <Burger width="24" height="24" onClick={() => setShowMenu(true)} />
-          {/* <Menu /> */}
-        </nav>
-      </section>
+          <NavLink
+            className={setAtive}
+            to="/skills"
+            onClick={() => setShowMenu(false)}
+          >
+            Skills
+          </NavLink>
+          <NavLink
+            className={setAtive}
+            to="/projects"
+            onClick={() => setShowMenu(false)}
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            className={setAtive}
+            to="/about"
+            onClick={() => setShowMenu(false)}
+          >
+            About
+          </NavLink>
+          <NavLink
+            className={setAtive}
+            to="/contacts"
+            onClick={() => setShowMenu(false)}
+          >
+            Contacts
+          </NavLink>
+        </div>
+        <Burger width="24" height="24" onClick={() => setShowMenu(true)} />
+        {/* <Menu /> */}
+      </nav>
+      <RandomSquare />
     </header>
   );
 };
