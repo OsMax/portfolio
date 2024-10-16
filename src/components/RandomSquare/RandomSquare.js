@@ -13,19 +13,8 @@ const RandomSquare = () => {
     positions.push({ top: y, left: -x, size });
   }
 
-  //   console.log(positions);
   return (
     <>
-      {/* <div
-        style={{
-          position: "absolute",
-          border: "1px solid #888",
-          width: 50,
-          height: 50,
-          bottom: -100,
-          right: -25,
-        }}
-      ></div> */}
       {positions.map((item) => {
         return (
           <div
@@ -35,7 +24,6 @@ const RandomSquare = () => {
               border: "1px solid #888",
               width: item.size,
               height: item.size,
-              // ...{ item },
               top: item.top,
               left: item.left,
               zIndex: 1,
