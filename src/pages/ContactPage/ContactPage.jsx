@@ -13,22 +13,58 @@ const ContactPage = () => {
       </h2>
       <ul style={{ listStyle: "none" }}>
         <li>
-          <Facebook width={50} height={50} />
+          <a
+            href="https://www.facebook.com/max.os.10"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook width={50} height={50} />
+          </a>
         </li>
         <li>
-          <Linkedin width={50} height={50} />
+          <a
+            href="https://www.linkedin.com/in/maksym-osovik/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin width={50} height={50} />
+          </a>
         </li>
         <li>
-          <Telegram width={50} height={50} />
+          <a
+            href="https://t.me/Os_Max"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Telegram width={50} height={50} />
+          </a>
         </li>
         <li>
-          <Viber width={50} height={50} />
+          <a
+            href="viber://chat?number=+380665553093"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Viber width={50} height={50} />
+          </a>
         </li>
         <li>
-          <Whatsup width={50} height={50} />
+          <a
+            href="https://wa.me/380665553093"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Whatsup width={50} height={50} />
+          </a>
         </li>
         <li>
-          <Email width={50} height={50} />
+          <a
+            href="mailto:www.osmax@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Email width={50} height={50} />
+          </a>
         </li>
       </ul>
     </div>
