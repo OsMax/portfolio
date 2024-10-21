@@ -21,7 +21,7 @@ const RandomSquare = () => {
             key={`item ${item.top + item.left}`}
             style={{
               position: "absolute",
-              border: "1px solid #888",
+              border: "1px solid #555",
               width: item.size,
               height: item.size,
               top: item.top,
