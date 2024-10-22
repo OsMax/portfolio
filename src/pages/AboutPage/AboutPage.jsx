@@ -7,21 +7,29 @@ const AboutPage = () => {
         <span style={{ color: "#C778DD" }}>/</span>about-me
       </h2>
       <p style={{ margin: 0, paddingLeft: 10, color: "#888", fontSize: 12 }}>
-        Who am i?
+        Who am I?
       </p>
-      <div style={{ padding: 10 }}>
-        <p className={css.aboutText}>Hello, i'm Maksym!</p>
-        <p className={css.aboutText}>
-          Front-end developer with knowledge of HTML, CSS, JavaScript, React,
-          Redux and Node.js.
-          <br />
-          Conscientious, flexible, and creative person, always ready to learn
-          and gain new experiences. Analytical skills allow me to quickly find
-          solutions to complete a given task.
-          <br />I have experience as team lead and as developer of a team
-          project. Easily find an approach to people.
-          <br />I can work both in a team and independently.
-        </p>
+      <div className={css.container}>
+        <div className={css.forText}>
+          <p className={css.aboutText}>Hello, i'm Maksym!</p>
+          <p className={css.aboutText}>
+            FullStack developer with knowledge of HTML, CSS, JavaScript, React,
+            React-Native, Redux and Node.js.
+            <br />
+            Conscientious, flexible, and creative person, always ready to learn
+            and gain new experiences. Analytical skills allow me to quickly find
+            solutions to complete a given task.
+            <br />I have experience as team lead and as developer of a team
+            project. Easily find an approach to people.
+            <br />I can work both in a team and independently.
+          </p>
+        </div>
+        <img
+          className={css.foto}
+          src={require("../../assets/aboutImg.webp")}
+          alt="Maksym Osovik"
+          width="95%"
+        />
       </div>
     </div>
   );
