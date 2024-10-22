@@ -26,7 +26,7 @@ const Footer = () => {
         <div className={css.mediaContainer}>
           <p>Media:</p>
           <div className={css.media}>
-            <p>Media:</p>
+            <p style={{ color: "#555" }}>none</p>
           </div>
         </div>
       </div>
