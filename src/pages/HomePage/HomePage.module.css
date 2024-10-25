@@ -5,6 +5,11 @@
   align-items: center;
   z-index: 1;
 }
+
+.title {
+  text-align: center;
+}
+
 .h1,
 .h2,
 .skills {
@@ -25,8 +30,10 @@
 
 .fotoContainer {
   position: relative;
-  max-width: 400px;
   z-index: 1;
+  width: 60%;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .foto {
@@ -41,6 +48,11 @@
   position: relative;
   top: -40px;
   left: -20px;
+}
+.nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .links {
@@ -61,11 +73,15 @@
 
 .skillLink {
   position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
 }
 
 .skillImg {
+  display: block;
   position: relative;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   z-index: 2;
   width: 75px;
   height: 75px;
@@ -82,9 +98,41 @@
 
 @keyframes shake {
   0% {
-    transform: translate(-50%, -50%) rotateY(0deg);
+    transform: rotateY(0deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotateY(359deg);
+    transform: rotateY(359deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    flex-direction: row; /* Горизонтальное направление для перестройки элементов */
+    flex-wrap: wrap; /* Включает перенос строк */
+    justify-content: space-around;
+  }
+
+  .title {
+    order: 1;
+    flex: 1 1 100%; /* Первый элемент занимает всю ширину */
+  }
+
+  .fotoContainer {
+    order: 3;
+    flex: 1 1;
+    padding: 20px;
+    max-width: 350px;
+  }
+
+  .nav {
+    top: 0;
+    margin: 0;
+    align-items: center;
+    max-width: 200px;
+
+    order: 2;
+    flex: 1 1;
+    padding: 20px;
+    padding-left: 60px;
   }
 }
