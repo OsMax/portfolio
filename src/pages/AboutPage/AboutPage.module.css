@@ -22,3 +22,9 @@
   color: #aaa;
   line-height: 2;
 }
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row-reverse; /* Горизонтальное направление для перестройки элементов */
+  }
+}
