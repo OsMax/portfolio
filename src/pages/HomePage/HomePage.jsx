@@ -33,11 +33,13 @@ const HomePage = () => {
 
   return (
     <div className={css.mainContainer}>
-      <h1 className={css.h1}>Maksym Osovik</h1>
-      <h2 className={css.h2}>FULLSTACK DEVELOPER</h2>
-      <p className={css.skills}>
-        (HTML, CSS, JS, React, Redux, React-Native, Node.js, Express, Mongodb)
-      </p>
+      <div className={css.title}>
+        <h1 className={css.h1}>Maksym Osovik</h1>
+        <h2 className={css.h2}>FULLSTACK DEVELOPER</h2>
+        <p className={css.skills}>
+          (HTML, CSS, JS, React, Redux, React-Native, Node.js, Express, Mongodb)
+        </p>
+      </div>
       <div className={css.fotoContainer} ref={containerRef}>
         <Logo width="90%" height="90%" className={css.logo} />
         <img
@@ -72,18 +74,20 @@ const HomePage = () => {
           );
         })}
       </div>
-      <NavLink className={css.links} to="/skills">
-        <span>#</span>skills
-      </NavLink>
-      <NavLink className={css.links} to="/projects">
-        <span>#</span>projects
-      </NavLink>
-      <NavLink className={css.links} to="/about">
-        <span>#</span>about_me
-      </NavLink>
-      <NavLink className={css.links} to="/contacts">
-        <span>#</span>contacts
-      </NavLink>
+      <nav className={css.nav}>
+        <NavLink className={css.links} to="/skills">
+          <span>#</span>skills
+        </NavLink>
+        <NavLink className={css.links} to="/projects">
+          <span>#</span>projects
+        </NavLink>
+        <NavLink className={css.links} to="/about">
+          <span>#</span>about_me
+        </NavLink>
+        <NavLink className={css.links} to="/contacts">
+          <span>#</span>contacts
+        </NavLink>
+      </nav>
     </div>
   );
 };
