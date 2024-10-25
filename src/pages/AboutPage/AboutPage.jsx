@@ -10,6 +10,12 @@ const AboutPage = () => {
         Who am I?
       </p>
       <div className={css.container}>
+        <img
+          className={css.foto}
+          src={require("../../assets/aboutImg.webp")}
+          alt="Maksym Osovik"
+          width="95%"
+        />
         <div className={css.forText}>
           <p className={css.aboutText}>Hello, i'm Maksym!</p>
           <p className={css.aboutText}>
@@ -24,12 +30,6 @@ const AboutPage = () => {
             <br />I can work both in a team and independently.
           </p>
         </div>
-        <img
-          className={css.foto}
-          src={require("../../assets/aboutImg.webp")}
-          alt="Maksym Osovik"
-          width="95%"
-        />
       </div>
     </div>
   );
