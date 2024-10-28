@@ -85,3 +85,24 @@
   justify-content: center;
   font-weight: bold;
 }
+
+@media (min-width: 768px) {
+  .openBtn {
+    display: none;
+  }
+  .closeBtn {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    opacity: 1;
+    height: 50%;
+    padding: 0;
+    left: 0;
+    transform: translateX(0vw);
+  }
+}

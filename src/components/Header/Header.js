@@ -61,7 +61,12 @@ const Header = () => {
             Contacts
           </NavLink>
         </div>
-        <Burger width="24" height="24" onClick={() => setShowMenu(true)} />
+        <Burger
+          className={css.openBtn}
+          width="24"
+          height="24"
+          onClick={() => setShowMenu(true)}
+        />
         {/* <Menu /> */}
       </nav>
       <RandomSquare />
