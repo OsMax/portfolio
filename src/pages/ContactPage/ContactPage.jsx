@@ -13,7 +13,7 @@ const ContactPage = () => {
       <h2 style={{ color: "#fff", margin: 0, paddingLeft: 10 }}>
         <span style={{ color: "#C778DD" }}>/</span>contacts
       </h2>
-      <ul style={{ listStyle: "none" }} className={css.list}>
+      <ul style={{ listStyle: "none", maxWidth: 600 }} className={css.list}>
         <li className={css.item}>
           <a
             className={css.link}
