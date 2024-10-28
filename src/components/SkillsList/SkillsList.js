@@ -39,20 +39,22 @@ const SkillsList = () => {
             key={skill.skill}
             className={css.item}
           >
-            <img
-              ref={(el) => (imgRefs.current[index] = el)}
-              alt={skill.skill}
-              title={skill.skill}
-              src={require(`../../assets/skills/${skill.img}`)}
-              className={css.skillImg}
-              style={{
-                top: `${randomTop}px`,
-                left: `${randomLeft}px`,
-                position: "absolute",
-                opacity: 0,
-                zIndex: 2,
-              }}
-            />
+            <a href={skill.wiki} target="_blank" rel="noopener noreferrer">
+              <img
+                ref={(el) => (imgRefs.current[index] = el)}
+                alt={skill.skill}
+                title={skill.skill}
+                src={require(`../../assets/skills/${skill.img}`)}
+                className={css.skillImg}
+                style={{
+                  top: `${randomTop}px`,
+                  left: `${randomLeft}px`,
+                  position: "absolute",
+                  opacity: 0,
+                  zIndex: 2,
+                }}
+              />
+            </a>
           </div>
         );
       })}
