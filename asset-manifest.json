@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f2f28228.css",
-    "main.js": "/portfolio/static/js/main.404da77f.js",
+    "main.css": "/portfolio/static/css/main.06d9ed2e.css",
+    "main.js": "/portfolio/static/js/main.87e675f8.js",
     "static/media/Pixabay.png": "/portfolio/static/media/Pixabay.d340617e1b4a3eb1b084.png",
     "static/media/Car-rental.png": "/portfolio/static/media/Car-rental.bd7afd2b026765beb3e6.png",
     "static/media/Movies.png": "/portfolio/static/media/Movies.eec0f2fed941cc720534.png",
@@ -38,11 +38,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/menu_close.svg": "/portfolio/static/media/menu_close.d5422dded0b370b5a043dd778d5a1764.svg",
     "static/media/burger.svg": "/portfolio/static/media/burger.8cd319a00f8e003ee867e7a7018aa10f.svg",
-    "main.f2f28228.css.map": "/portfolio/static/css/main.f2f28228.css.map",
-    "main.404da77f.js.map": "/portfolio/static/js/main.404da77f.js.map"
+    "main.06d9ed2e.css.map": "/portfolio/static/css/main.06d9ed2e.css.map",
+    "main.87e675f8.js.map": "/portfolio/static/js/main.87e675f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2f28228.css",
-    "static/js/main.404da77f.js"
+    "static/css/main.06d9ed2e.css",
+    "static/js/main.87e675f8.js"
   ]
 }
