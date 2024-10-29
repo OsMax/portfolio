@@ -29,7 +29,8 @@
   transform: scaleX(-1);
 }
 
-.item:nth-child(even) .text {
+.item:nth-child(even) .text,
+.item:nth-child(even) .icon {
   transform: scaleX(-1);
 }
 

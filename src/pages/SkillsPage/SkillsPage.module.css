@@ -1,9 +1,13 @@
 .skillsContainer {
   /* text-align: center; */
   color: #888;
-  align-items: center;
+  /* align-items: center; */
   overflow: hidden;
   padding: 10px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  z-index: 2;
 }
 
 .titleContainer {

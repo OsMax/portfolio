@@ -2,7 +2,7 @@ import css from "./AboutPage.module.css";
 
 const AboutPage = () => {
   return (
-    <div style={{ padding: 10 }}>
+    <div style={{ padding: 10, maxWidth: 1200, margin: "0 auto" }}>
       <h2 style={{ color: "#fff", margin: 0, paddingLeft: 10 }}>
         <span style={{ color: "#C778DD" }}>/</span>about-me
       </h2>

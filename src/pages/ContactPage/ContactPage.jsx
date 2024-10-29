@@ -9,7 +9,7 @@ import css from "./ContactPage.module.css";
 
 const ContactPage = () => {
   return (
-    <div style={{ padding: 10 }}>
+    <div style={{ padding: 10, maxWidth: 1200, margin: "0 auto" }}>
       <h2 style={{ color: "#fff", margin: 0, paddingLeft: 10 }}>
         <span style={{ color: "#C778DD" }}>/</span>contacts
       </h2>
@@ -21,7 +21,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Facebook width={50} height={50} />
+            <Facebook width={50} height={50} className={css.icon} />
             <p className={css.text}>facebook.com/max.os.10</p>
           </a>
         </li>
@@ -32,7 +32,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Linkedin width={50} height={50} />
+            <Linkedin width={50} height={50} className={css.icon} />
             <p className={css.text}>linkedin.com/in/maksym-osovik</p>
           </a>
         </li>
@@ -43,7 +43,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Telegram width={50} height={50} />
+            <Telegram width={50} height={50} className={css.icon} />
             <p className={css.text}>t.me/Os_Max</p>
           </a>
         </li>
@@ -54,7 +54,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Viber width={50} height={50} />
+            <Viber width={50} height={50} className={css.icon} />
             <p className={css.text}>380665553093</p>
           </a>
         </li>
@@ -65,7 +65,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Whatsup width={50} height={50} />
+            <Whatsup width={50} height={50} className={css.icon} />
             <p className={css.text}>380665553093</p>
           </a>
         </li>
@@ -76,7 +76,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Email width={50} height={50} />
+            <Email width={50} height={50} className={css.icon} />
             <p className={css.text}>www.osmax@gmail.com</p>
           </a>
         </li>
