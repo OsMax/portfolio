@@ -109,7 +109,11 @@
   .mainContainer {
     flex-direction: row; /* Горизонтальное направление для перестройки элементов */
     flex-wrap: wrap; /* Включает перенос строк */
-    justify-content: space-around;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .title {
