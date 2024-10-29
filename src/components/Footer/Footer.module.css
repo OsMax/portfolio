@@ -4,6 +4,7 @@
   box-sizing: border-box;
 
   width: 100%;
+  z-index: 99;
 }
 
 .footerContainer {
@@ -18,7 +19,6 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-color: #555;
-  z-index: 99;
   background-color: #282c33;
   color: #fff;
 }
