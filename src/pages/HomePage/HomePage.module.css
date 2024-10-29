@@ -127,6 +127,15 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+  .h1 {
+    font-size: 38px;
+  }
+  .h2 {
+    font-size: 30px;
+  }
+  .skills {
+    font-size: 20px;
+  }
 
   .title {
     order: 1;
@@ -137,7 +146,7 @@
     order: 3;
     flex: 1 1;
     padding: 20px;
-    max-width: 26vw;
+    max-width: 25vw;
   }
 
   .navCont {
@@ -159,6 +168,16 @@
     /* margin: 0 auto; */
   }
   .text {
+    font-size: 24px;
     text-align: left;
+  }
+  .links {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fotoContainer {
+    max-width: 50vw;
   }
 }
