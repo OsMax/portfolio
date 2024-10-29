@@ -4,6 +4,9 @@
   width: 100%;
   z-index: 999;
 }
+.headerContainer {
+  position: relative;
+}
 
 .navContainer {
   box-sizing: border-box;
@@ -104,5 +107,12 @@
     padding: 0;
     left: 0;
     transform: translateX(0vw);
+  }
+}
+
+@media (min-width: 768px) {
+  .headerContainer {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
