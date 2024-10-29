@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from "../../assets/svgImg/logo.svg";
 
 const Footer = () => {
   return (
-    <>
+    <footer className={css.footer}>
       <div className={css.footerContainer}>
         <div>
           <div className={css.email}>
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </footer>
   );
 };
 export default Footer;

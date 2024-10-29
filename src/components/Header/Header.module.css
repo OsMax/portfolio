@@ -6,11 +6,11 @@
 }
 .headerContainer {
   position: relative;
+  margin: 0 auto;
 }
 
 .navContainer {
   box-sizing: border-box;
-  /* margin: 0 auto; */
   display: flex;
   padding: 8px 10px;
   justify-content: space-between;
@@ -108,11 +108,7 @@
     left: 0;
     transform: translateX(0vw);
   }
-}
-
-@media (min-width: 768px) {
   .headerContainer {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
   }
 }
