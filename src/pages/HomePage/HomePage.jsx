@@ -74,20 +74,25 @@ const HomePage = () => {
           );
         })}
       </div>
-      <nav className={css.nav}>
-        <NavLink className={css.links} to="/skills">
-          <span>#</span>skills
-        </NavLink>
-        <NavLink className={css.links} to="/projects">
-          <span>#</span>projects
-        </NavLink>
-        <NavLink className={css.links} to="/about">
-          <span>#</span>about_me
-        </NavLink>
-        <NavLink className={css.links} to="/contacts">
-          <span>#</span>contacts
-        </NavLink>
-      </nav>
+      <div className={css.navCont}>
+        <p className={css.text}>
+          Hi there! Here, you can learn more about me and explore my projects.
+        </p>
+        <nav className={css.nav}>
+          <NavLink className={css.links} to="/skills">
+            <span>#</span>skills
+          </NavLink>
+          <NavLink className={css.links} to="/projects">
+            <span>#</span>projects
+          </NavLink>
+          <NavLink className={css.links} to="/about">
+            <span>#</span>about_me
+          </NavLink>
+          <NavLink className={css.links} to="/contacts">
+            <span>#</span>contacts
+          </NavLink>
+        </nav>
+      </div>
     </div>
   );
 };
