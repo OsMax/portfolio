@@ -1,18 +1,14 @@
-import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import css from "./Layout.module.css";
+import Matrix from "../Matrix/Matrix";
+import Main from "../Main/Main";
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <main className={css.main}>
-        <Suspense>
-          <Outlet />
-        </Suspense>
-      </main>
+      <Main />
+      <Matrix />
       <Footer />
     </>
   );
