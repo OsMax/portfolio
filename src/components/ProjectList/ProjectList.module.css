@@ -8,7 +8,8 @@
   /* padding: 10px; */
 }
 .item {
-  max-width: 300px;
+  width: 300px;
+  box-sizing: border-box;
   position: relative;
   display: flex;
   align-items: center;
