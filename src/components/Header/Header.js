@@ -4,8 +4,6 @@ import css from "./Header.module.css";
 import { ReactComponent as Burger } from "../../assets/svgImg/burger.svg";
 import { ReactComponent as Close } from "../../assets/svgImg/menu_close.svg";
 import { ReactComponent as Logo } from "../../assets/svgImg/logo.svg";
-import RandomSquare from "../RandomSquare/RandomSquare";
-// import Menu from "../Menu/Menu";
 
 const setAtive = ({ isActive }) => (isActive ? css.active : css.navLink);
 const Header = () => {
@@ -70,7 +68,6 @@ const Header = () => {
           />
           {/* <Menu /> */}
         </nav>
-        <RandomSquare />
       </div>
     </header>
   );
