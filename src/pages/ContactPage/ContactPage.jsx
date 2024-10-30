@@ -21,7 +21,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Facebook width={50} height={50} className={css.icon} />
+            <Facebook width={44} height={44} className={css.icon} />
             <p className={css.text}>facebook.com/max.os.10</p>
           </a>
         </li>
@@ -32,7 +32,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Linkedin width={50} height={50} className={css.icon} />
+            <Linkedin width={44} height={44} className={css.icon} />
             <p className={css.text}>linkedin.com/in/maksym-osovik</p>
           </a>
         </li>
@@ -43,7 +43,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Telegram width={50} height={50} className={css.icon} />
+            <Telegram width={44} height={44} className={css.icon} />
             <p className={css.text}>t.me/Os_Max</p>
           </a>
         </li>
@@ -54,7 +54,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Viber width={50} height={50} className={css.icon} />
+            <Viber width={44} height={44} className={css.icon} />
             <p className={css.text}>380665553093</p>
           </a>
         </li>
@@ -65,7 +65,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Whatsup width={50} height={50} className={css.icon} />
+            <Whatsup width={44} height={44} className={css.icon} />
             <p className={css.text}>380665553093</p>
           </a>
         </li>
@@ -76,7 +76,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Email width={50} height={50} className={css.icon} />
+            <Email width={44} height={44} className={css.icon} />
             <p className={css.text}>www.osmax@gmail.com</p>
           </a>
         </li>

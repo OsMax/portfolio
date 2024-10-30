@@ -146,7 +146,7 @@
     order: 3;
     flex: 1 1;
     padding: 20px;
-    max-width: 25vw;
+    max-width: 20vw;
   }
 
   .navCont {
@@ -172,11 +172,11 @@
     text-align: left;
   }
   .links {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .fotoContainer {
     max-width: 50vw;
   }
