@@ -1,0 +1,14 @@
+.main {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #ccc;
+}
+
+.mainContainer {
+  position: relative;
+  z-index: 50;
+}
