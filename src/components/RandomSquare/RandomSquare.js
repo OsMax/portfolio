@@ -20,10 +20,10 @@ const RandomSquare = () => {
 
   return (
     <>
-      {positions.map((item) => {
+      {positions.map((item, index) => {
         return (
           <div
-            key={`item ${item.top + item.left}`}
+            key={`item ${item.top + "/" + index}`}
             style={{
               position: "absolute",
               border: "1px solid #555",
