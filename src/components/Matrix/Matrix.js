@@ -15,7 +15,7 @@ const Matrix = ({ containerRef }) => {
     const getSize = () => {
       if (containerRef.current) {
         setHeight(containerRef.current.offsetHeight);
-        setWidth(containerRef.current.offsetWidth);
+        setWidth(containerRef.current.offsetWidth + 20);
       }
     };
     const resizeObserver = new ResizeObserver(getSize);

@@ -1,7 +1,5 @@
 .main {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 80px;
   box-sizing: border-box;
   height: 100vh;
   overflow-y: auto;
@@ -10,7 +8,15 @@
   overflow-x: hidden;
 }
 
+.matrixContainer {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  height: 100%;
+  /* box-sizing: border-box; */
+}
+
 .mainContainer {
-  position: relative;
+  /* position: relative; */
   z-index: 50;
+  min-height: 100%;
 }
