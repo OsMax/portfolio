@@ -12,14 +12,21 @@ const Matrix = ({ containerRef }) => {
     .map(() => 0);
 
   useLayoutEffect(() => {
+    const getSize = () => {
+      if (containerRef.current) {
+        setHeight(containerRef.current.offsetHeight);
+        setWidth(containerRef.current.offsetWidth);
+      }
+    };
+    const resizeObserver = new ResizeObserver(getSize);
     if (containerRef.current) {
       console.log(
         containerRef.current.offsetHeight,
         containerRef.current.offsetWidth
       );
-      setHeight(containerRef.current.offsetHeight);
-      setWidth(containerRef.current.offsetWidth);
+      resizeObserver.observe(containerRef.current);
     }
+    getSize();
   }, [containerRef]);
 
   useEffect(() => {
