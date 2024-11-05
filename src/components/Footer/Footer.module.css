@@ -21,6 +21,7 @@
   border-color: #555;
   background-color: #282c33;
   color: #fff;
+  box-sizing: border-box;
 }
 
 .email {
