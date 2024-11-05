@@ -6,7 +6,7 @@ const Matrix = ({ containerRef }) => {
   const [height, setHeight] = useState(window.innerHeight);
   const [width, setWidth] = useState(window.innerWidth + 20);
   // let height = window.innerHeight;
-  let yPositions = Array(1000)
+  let yPositions = Array(2000)
     .join(0)
     .split("")
     .map(() => 0);
@@ -32,7 +32,7 @@ const Matrix = ({ containerRef }) => {
     const draw = () => {
       matrix.fillStyle = "rgba(40, 44, 51, 0.1)";
       matrix.fillRect(0, 0, width, height);
-      matrix.fillStyle = "#242";
+      matrix.fillStyle = "#131";
       matrix.font = "20px Georgia";
 
       yPositions.forEach((y, index) => {
