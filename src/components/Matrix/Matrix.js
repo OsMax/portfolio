@@ -6,7 +6,7 @@ const Matrix = ({ containerRef }) => {
   const [height, setHeight] = useState(window.innerHeight);
   const [width, setWidth] = useState(window.innerWidth + 20);
   // let height = window.innerHeight;
-  let yPositions = Array(300)
+  let yPositions = Array(1000)
     .join(0)
     .split("")
     .map(() => 0);
@@ -20,10 +20,6 @@ const Matrix = ({ containerRef }) => {
     };
     const resizeObserver = new ResizeObserver(getSize);
     if (containerRef.current) {
-      console.log(
-        containerRef.current.offsetHeight,
-        containerRef.current.offsetWidth
-      );
       resizeObserver.observe(containerRef.current);
     }
     getSize();
@@ -44,7 +40,7 @@ const Matrix = ({ containerRef }) => {
         const x = index * 10 + 10;
         matrix.fillText(text, x, y);
 
-        if (y > 100 + Math.random() * 1e4) {
+        if (y > height - 500 + Math.random() * 1e4) {
           yPositions[index] = 0;
         } else {
           yPositions[index] = y + 10;
