@@ -32,7 +32,7 @@ const Matrix = ({ containerRef }) => {
     const draw = () => {
       matrix.fillStyle = "rgba(40, 44, 51, 0.1)";
       matrix.fillRect(0, 0, width, height);
-      matrix.fillStyle = "#131";
+      matrix.fillStyle = "#242";
       matrix.font = "20px Georgia";
 
       yPositions.forEach((y, index) => {
