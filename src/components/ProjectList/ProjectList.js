@@ -9,9 +9,10 @@ const ProjectList = () => {
           <div>
             <h3 className={css.projectName}>{project.name}</h3>
             <img
+              width={290}
+              height={190}
               alt={project.name}
               title={project.name}
-              // src={`https://image.thum.io/get/${project.link}`}
               src={require(`../../assets/projects/${project.name}.png`)}
               className={css.projectImg}
             />
