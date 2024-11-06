@@ -10,35 +10,23 @@ const Matrix = ({ containerRef }) => {
     .join(0)
     .split("")
     .map(() => 0);
-  const getSize = () => {
-    if (containerRef.current) {
-      setHeight(containerRef.current.offsetHeight);
-      setWidth(containerRef.current.offsetWidth + 20);
-    }
-  };
-
-  // useLayoutEffect(() => {
-  //   const resizeObserver = new ResizeObserver(getSize);
-  //   if (containerRef.current) {
-  //     resizeObserver.observe(containerRef.current);
-  //   }
-
-  //   getSize();
-
-  //   return () => {
-  //     resizeObserver.disconnect();
-  //   };
-  // }, [containerRef]);
 
   useLayoutEffect(() => {
-    const timeoutId = setTimeout(getSize, 1000);
-
-    window.addEventListener("resize", getSize);
-
-    return () => {
-      clearTimeout(timeoutId);
-      window.removeEventListener("resize", getSize);
+    const getSize = () => {
+      if (containerRef.current) {
+        setHeight(containerRef.current.offsetHeight);
+        setWidth(containerRef.current.offsetWidth + 20);
+      }
     };
+
+    getSize();
+    setTimeout(getSize, 300);
+
+    const resizeObserver = new ResizeObserver(getSize);
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
+    }
+    return () => resizeObserver.disconnect();
   }, [containerRef]);
 
   useEffect(() => {
