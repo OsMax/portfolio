@@ -21,6 +21,9 @@ const Matrix = ({ containerRef }) => {
 
     getSize();
     setTimeout(getSize, 300);
+    if (typeof ResizeObserver !== "undefined") {
+      console.log("!!!!!!!!!!!");
+    }
 
     const resizeObserver = new ResizeObserver(getSize);
     if (containerRef.current) {

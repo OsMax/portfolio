@@ -8,15 +8,15 @@
   overflow-x: hidden;
 }
 
+.mainContainer {
+  /* position: relative; */
+  z-index: 50;
+  min-height: 100%;
+}
+
 .matrixContainer {
   padding-top: 60px;
   padding-bottom: 80px;
   height: 100%;
   /* box-sizing: border-box; */
-}
-
-.mainContainer {
-  /* position: relative; */
-  z-index: 50;
-  min-height: 100%;
 }
