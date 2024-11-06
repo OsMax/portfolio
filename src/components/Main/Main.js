@@ -13,13 +13,13 @@ const Main = () => {
     <>
       <main className={css.main}>
         <div className={css.mainContainer} ref={containerRef}>
-          <div className={css.matrixContainer}>
-            <Suspense>
-              <Outlet />
-            </Suspense>
-            <Matrix containerRef={containerRef} />
-          </div>
+          {/* <div className={css.matrixContainer}> */}
+          <Suspense>
+            <Outlet />
+          </Suspense>
+          <Matrix containerRef={containerRef} />
         </div>
+        {/* </div> */}
         <RandomSquare />
       </main>
     </>

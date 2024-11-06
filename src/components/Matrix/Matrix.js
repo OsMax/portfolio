@@ -21,15 +21,15 @@ const Matrix = ({ containerRef }) => {
 
     getSize();
     setTimeout(getSize, 300);
-    if (typeof ResizeObserver !== "undefined") {
-      console.log("!!!!!!!!!!!");
-    }
+    // if (typeof ResizeObserver !== "undefined") {
+    //   console.log("!!!!!!!!!!!");
+    // }
 
-    const resizeObserver = new ResizeObserver(getSize);
-    if (containerRef.current) {
-      resizeObserver.observe(containerRef.current);
-    }
-    return () => resizeObserver.disconnect();
+    // const resizeObserver = new ResizeObserver(getSize);
+    // if (containerRef.current) {
+    //   resizeObserver.observe(containerRef.current);
+    // }
+    // return () => resizeObserver.disconnect();
   }, [containerRef]);
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const Matrix = ({ containerRef }) => {
       height={height}
       style={{
         backgroundColor: "transparent",
-        position: "absolute",
+        position: "fixed",
         top: 0,
         left: -10,
         zIndex: -1,
