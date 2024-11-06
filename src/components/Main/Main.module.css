@@ -10,6 +10,8 @@
 
 .mainContainer {
   /* position: relative; */
+  padding-top: 60px;
+  padding-bottom: 80px;
   z-index: 50;
   min-height: 100%;
 }

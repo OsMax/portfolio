@@ -3,8 +3,8 @@ import React, { useRef, useEffect, useLayoutEffect, useState } from "react";
 const Matrix = ({ containerRef }) => {
   const canvasRef = useRef(null);
   // const width = window.innerWidth + 20;
-  const [height, setHeight] = useState(window.innerHeight);
-  const [width, setWidth] = useState(window.innerWidth + 20);
+  const [height, setHeight] = useState(window.screen.height);
+  const [width, setWidth] = useState(window.screen.width + 20);
   // let height = window.innerHeight;
   let yPositions = Array(2000)
     .join(0)
