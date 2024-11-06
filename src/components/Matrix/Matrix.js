@@ -18,11 +18,17 @@ const Matrix = ({ containerRef }) => {
         setWidth(containerRef.current.offsetWidth + 20);
       }
     };
+
     const resizeObserver = new ResizeObserver(getSize);
     if (containerRef.current) {
       resizeObserver.observe(containerRef.current);
     }
+
     getSize();
+
+    return () => {
+      resizeObserver.disconnect();
+    };
   }, [containerRef]);
 
   useEffect(() => {
