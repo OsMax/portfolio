@@ -30,7 +30,7 @@ const Matrix = ({ containerRef }) => {
   //   };
   // }, [containerRef]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const timeoutId = setTimeout(getSize, 1000);
 
     window.addEventListener("resize", getSize);
