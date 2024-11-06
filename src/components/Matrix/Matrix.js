@@ -19,16 +19,15 @@ const Matrix = ({ containerRef }) => {
       }
     };
 
-    // const resizeObserver = new ResizeObserver(getSize);
-    // if (containerRef.current) {
-    //   resizeObserver.observe(containerRef.current);
-    // }
-    window.addEventListener("resize", getSize);
+    const resizeObserver = new ResizeObserver(getSize);
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
+    }
 
     getSize();
 
     return () => {
-      window.removeEventListener("resize", getSize);
+      resizeObserver.disconnect();
     };
   }, [containerRef]);
 
