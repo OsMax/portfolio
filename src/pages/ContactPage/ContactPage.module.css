@@ -23,7 +23,13 @@
   gap: 12px;
   align-items: center;
 }
-
+.item:hover {
+  border: 1px solid #fff;
+  transform: translate(-10px, 0);
+}
+.item:nth-child(even):hover {
+  transform: scaleX(-1) translate(-10px, 0);
+}
 .item:nth-child(even) {
   margin-left: auto;
   transform: scaleX(-1);
