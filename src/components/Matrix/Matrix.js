@@ -25,11 +25,11 @@ const Matrix = ({ containerRef }) => {
     //   console.log("!!!!!!!!!!!");
     // }
 
-    // const resizeObserver = new ResizeObserver(getSize);
-    // if (containerRef.current) {
-    //   resizeObserver.observe(containerRef.current);
-    // }
-    // return () => resizeObserver.disconnect();
+    const resizeObserver = new ResizeObserver(getSize);
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
+    }
+    return () => resizeObserver.disconnect();
   }, [containerRef]);
 
   useEffect(() => {
