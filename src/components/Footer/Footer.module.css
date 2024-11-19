@@ -11,7 +11,7 @@
   margin: 0 auto;
   display: flex;
   padding: 10px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   justify-content: space-between;
   gap: 12px;
   border-top-style: solid;
