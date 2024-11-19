@@ -7,7 +7,7 @@ const MyProjectPage = () => {
         padding: 10,
         maxWidth: 1200,
         margin: "0 auto",
-        paddingBottom: 40,
+        // paddingBottom: 40,
       }}
     >
       <h2 style={{ color: "#fff", margin: 0, paddingLeft: 10 }}>
