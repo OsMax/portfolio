@@ -18,8 +18,36 @@
   object-fit: contain;
 }
 
+.serList {
+  padding: 10px 8px;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.serList li {
+  border: 1px solid #777;
+  width: 280px;
+  height: 230px;
+  overflow: hidden;
+}
+
+.serList li h3 {
+  margin: 0;
+  padding: 8px;
+  color: #eee;
+}
+
+.serImg {
+  max-width: 100%;
+  /* max-height: 240px; */
+}
+
 .aboutText {
-  color: #aaa;
+  color: #eee;
   line-height: 2;
 }
 
